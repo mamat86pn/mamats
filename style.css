@@ -1,19 +1,53 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Temanku Si Paling Lucu</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>😆 Manuk gagak menclok neng cagak Aduh manukku ndangak 😆</h1>
-  <img src="teman.jpg" alt="Foto Teman" class="teman-img">
-  <p class="caption">"jembot kecelop santen menawi lepat nyuwun ngapunten 😎"</p>
+body {
+  text-align: center;
+  background-color: #fff0f5;
+  font-family: 'Comic Sans MS', cursive;
+  padding: 20px;
+}
 
-  <button onclick="showSurprise()">Jangan diklik ya!</button>
-  <p id="surprise-text" style="display:none; margin-top:20px; font-weight:bold; color:red;">😱 WKWKWKWKWK </p>
+h1 {
+  font-size: 2.5em;
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+.teman-img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ff69b4;
+  animation: wiggle 1s infinite;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.caption {
+  font-size: 1.2em;
+  margin-top: 15px;
+  color: #444;
+  background: #fff8;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 20px;
+  font-size: 1em;
+  padding: 10px 20px;
+  background: #ff69b4;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
