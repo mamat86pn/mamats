@@ -3,29 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🌈 Si Paling Gondrong 🌈</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <title>🔥 Si Paling Sangar 🔥</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #f00;
+      font-family: 'Impact', sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px #ff0000;
+    }
+
+    .teman-img {
+      width: 300px;
+      border-radius: 20px;
+      border: 5px solid red;
+      box-shadow: 0 0 20px red;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .caption {
+      font-size: 1.5em;
+      background: #f003;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #f00;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #f00;
+    }
+
+    button:hover {
+      background-color: #c00;
+    }
+
+    #gambar-sangar {
+      display: none;
+      width: 300px;
+      margin-top: 20px;
+      border-radius: 20px;
+      border: 5px solid #fff;
+      box-shadow: 0 0 30px #fff;
+    }
+  </style>
 </head>
 <body>
-  <h1>🤣 SI PALING IMUT 🤣</h1>
+  <h1>🔥 SI PALING SANGAR 🔥</h1>
 
-  <!-- Gambar awal -->
-  <img src="teman.jpg" alt="Foto Teman" class="teman-img" id="gambar-awal">
+  <img src="teman.jpg" alt="Teman Biasa" class="teman-img">
 
-  <!-- Gambar kejutan -->
-  <img src="teman2.jpg" alt="KETAHUAN" id="gambar-kejutan" class="teman-img" style="display:none;">
+  <p class="caption">"Jangan tertipu senyumnya... dia galak!" 😤</p>
 
-  <p class="caption">"Katanya sih cakep, padahal filter semua 🤡"</p>
+  <button onclick="tampilkanSangar()">Lihat sisi gelapnya 😈</button>
 
-  <button onclick="showSurprise()">Klik kalau kamu berani 😈</button>
+  <img id="gambar-sangar" src="teman-sangar.jpg" alt="Teman Sangar">
 
-  <p id="surprise-text" style="display:none;" class="surprise-text">😱 DIA KETAHUAN NGGAK PUNYA MALU!</p>
-
-  <img src="teman.jpg" alt="KETAHUAN" id="gambar-kejutan" class="teman-img" style="display:none;">
-
-  <audio id="laugh-sound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
-
-  <script src="script.js"></script>
+  <script>
+    function tampilkanSangar() {
+      document.getElementById("gambar-sangar").style.display = "block";
+    }
+  </script>
 </body>
 </html>
