@@ -1,8 +1,9 @@
 function showSurprise() {
-  const el = document.getElementById("surprise-text");
-  el.style.display = "block";
+  const text = document.getElementById("surprise-text");
+  const gif = document.getElementById("gif-reaction");
+  const sound = document.getElementById("laugh-sound");
 
-  // Tambah efek suara (opsional, jika kamu upload file audio)
-  // const audio = new Audio('haha.mp3');
-  // audio.play();
+  text.style.display = "block";
+  gif.style.display = "block";
+  sound.play();
 }
