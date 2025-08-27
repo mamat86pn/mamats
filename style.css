@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temanku Si Paling Lucu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>😆 Manuk gagak menclok neng cagak Aduh manukku ndangak 😆</h1>
+  <img src="teman.jpg" alt="Foto Teman" class="teman-img">
+  <p class="caption">"jembot kecelop santen menawi lepat nyuwun ngapunten 😎"</p>
+
+  <button onclick="showSurprise()">Jangan diklik ya!</button>
+  <p id="surprise-text" style="display:none; margin-top:20px; font-weight:bold; color:red;">😱 WKWKWKWKWK </p>
+
+  <script src="script.js"></script>
+</body>
+</html>
